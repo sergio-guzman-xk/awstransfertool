@@ -53,7 +53,7 @@ This button will save the configuration you have on screen and create the files 
                 If left empty the system will just work with the all the files at the Souce Location. 
                 
 ### IMPORTANT!!!
-The program will work with what you saved. If you perform any changtes and do not click on the button to save them, the program will work with the previously saved configuration. 
+The program will work with what you saved. If you perform any changes and do not click on the button to save them, the program will work with the previously saved configuration. 
 
 ## 5. Estimate Packet Size - Optional
 
