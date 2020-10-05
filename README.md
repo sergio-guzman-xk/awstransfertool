@@ -43,7 +43,7 @@ This button will save the configuration you have on screen and create the files 
 ### Mandatory
 - Origin Profile
 - AWS Source Path: Have in mind that it should end with '/'
-- Local Path: Have in mind that it should end with '\' and must be the absolute Path.
+- Local Path: Have in mind that it should end with '\\' and must be the absolute Path.
 ### IF THE AWS CHECKBOX IS SELECTED
 - Destination Profile
 - AWS Destination Path: Have in mind that it should end with '/'
