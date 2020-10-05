@@ -14,7 +14,7 @@ You just need to download the .exe file and run it as an administrator.
 
 Placeholder
 
-# Course Code
+# Source Code
 The source code can be found at https://github.com/sergio-guzman-xk/awstransfertoolProject.git
 
 # Possible Features
