@@ -1,12 +1,12 @@
 # AWS Transfer Tool
-This tool has been created to help users to move data from one Amazon S3 bucket to their local machine or another Amazon S3 bucket. Even thought Amazon has a direct way to do this, sometimes it is not possible due to security restrictions in any of the parties involved.
+This tool has been created to help users to move data from one Amazon S3 bucket to their local machine or another Amazon S3 bucket by using the local machine as a bridge. Even thought Amazon has a direct way to do this, sometimes it is not possible due to security restrictions in any of the parties involved.
 
-Please have in mind that none of the tasks are recurse and will only work on files and not folders (except for the Inspect buttin which will show folder at the current location). It will skip any subfolder at the Chose S3 location. If you want to download the files in a subrfolder then just make sure to specify it in the AWS Source Path box.
+Please have in mind that none of the tasks are recurse and will only work on files and not folders (except for the Inspect button which will show folders at the current location). It will skip any subfolder at the Chose S3 location when downloading the data. If you want to download the files in a subrfolder then just make sure to specify it in the AWS Source Path box.
 
 # Requirements
 You need the latest version of Python which can be download at https://www.python.org/downloads/ (Make sure to add it to the path). You also need to install awscli by opening powershell and running: pip3 install awscli.
 
-This program just automates the process of running cli commands and gives you the option to choose how many items you want to work with if so desired. That being said, the program uses shell commands and scripts. The code already executes and modifies all the privileges it needs to function. You can see those in the source code. To be precise:
+This program just automates the process of running cli commands and gives you the option to choose how many items you want to work with if so desired. That being said, the program uses shell commands and scripts. The code already executes and modifies all the privileges it needs to function. You can see those in the source code. Just to be specific it modifies:
 
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -force ; 
 Set-ExecutionPolicy RemoteSigned -Scope LocalMachine -force;
@@ -16,7 +16,7 @@ Which just allows you to run local scripts.
 # Usage
 You just need to download the .exe file and run it as an administrator.
 
-Once open you have 6 buttons. 
+Once opened you have 6 buttons. 
 
 ## 1. Check Tools - Optional
 
