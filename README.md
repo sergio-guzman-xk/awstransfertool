@@ -3,9 +3,9 @@ This tool has been created to help Windows users to move data from one Amazon S3
 
 Please have in mind that none of the tasks are recurse and will only work on files and not folders (except for the Inspect button which will show folders at the current location). It will skip any subfolder at the Chose S3 location when downloading the data. If you want to download the files in a subrfolder then just make sure to specify it in the AWS Source Path box.
 
-This program will create folder locally and in your aws S3 if the path provided doesn't exist. However, make sure that you end both paths correctly. For AWS make sure to use / at the end of the path and for the local path make sure you use \\.
+This program will create folder locally and in your aws S3 if the path provided doesn't exist. However, make sure that you end both paths correctly. For AWS make sure to use / at the end of the path and for the local path make sure you use \\ if you want the program to create a folder.
 
-#### Failing this may cause data lose as AWS will download the data into a single file, and I haven't found away to get the data out from that single file 
+#### If you don't use \\ and neither a folder nor a file exist with the specified name, aws will download all the files into a single file, and I haven't found away to get the data out from that single file. In other words, it may led to data loss!!!
 
 The progress bar on the right will help you have an idea of the process status.
 
