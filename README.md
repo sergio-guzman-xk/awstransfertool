@@ -1,7 +1,11 @@
 # AWS Transfer Tool
-This tool has been created to help users to move data from one Amazon S3 bucket to their local machine or another Amazon S3 bucket by using the local machine as a bridge. Even thought Amazon has a direct way to do this, sometimes it is not possible due to security restrictions in any of the parties involved.
+This tool has been created to help Windows users to move data from one Amazon S3 bucket to their local machine or another Amazon S3 bucket by using the local machine as a bridge. Even thought Amazon has a direct way to do this, sometimes it is not possible due to security restrictions in any of the parties involved.
 
 Please have in mind that none of the tasks are recurse and will only work on files and not folders (except for the Inspect button which will show folders at the current location). It will skip any subfolder at the Chose S3 location when downloading the data. If you want to download the files in a subrfolder then just make sure to specify it in the AWS Source Path box.
+
+This program will create folder locally and in your aws S3 if the path provided doesn't exist. However, make sure that you end both paths correctly. For AWS make sure to use / at the end of the path and for the local path make sure you use \\.
+
+The progress bar on the right will help you have an idea of the process status.
 
 # Requirements
 You need the latest version of Python which can be download at https://www.python.org/downloads/ (Make sure to add it to the path). You also need to install awscli by opening powershell and running: pip3 install awscli.
@@ -16,7 +20,7 @@ Which just allows you to run local scripts.
 # Usage
 You just need to download the .exe file and run it as an administrator.
 
-Once opened you have 6 buttons. 
+Once opened you have 5 buttons. 
 
 ## 1. Check Tools - Optional
 
@@ -55,11 +59,9 @@ This button will save the configuration you have on screen and create the files 
 ### IMPORTANT!!!
 The program will work with what you saved. If you perform any changes and do not click on the button to save them, the program will work with the previously saved configuration. 
 
-## 5. Estimate Packet Size - Optional
+Once you have saved the configuration it will show you how much data will be moved. That will help you control what you will be putting in your local machine or in your aws S3.
 
-This will show you how much data will be moved. That will help you control what you will be putting in your local machine or in your aws S3.
-
-## 6. Start - mandatory
+## 5. Start - mandatory
 
 This will start the process based on the last configuration you saved. If the AWS checkbox is checked then the program will transfer the files from the source S3 to the destination S3 using the local path folder as a bridge. This will move the files one by one so the only storage being use locally will be for the file that is being worked on at the time (one at a time).
 
