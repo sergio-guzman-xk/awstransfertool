@@ -5,7 +5,7 @@ Please have in mind that none of the tasks are recurse and will only work on fil
 
 This program will create folder locally and in your aws S3 if the path provided doesn't exist. However, make sure that you end both paths correctly. For AWS make sure to use / at the end of the path and for the local path make sure you use \\ if you want the program to create a folder.
 
-#### If you don't use \\ and neither a folder nor a file exist with the specified name, aws will download all the files into a single file, and I haven't found away to get the data out from that single file. In other words, it may led to data loss!!!
+#### If you don't use \\ and neither a folder nor a file exist with the specified name, aws will download all the files into a single file, and I haven't found away to get the data out from that single file. In other words, it may led to data loss!!! Also, you can only have one instance of this program running at a time. Openning 2 instances of this app will lead to errors. 
 
 The progress bar on the right will help you have an idea of the process status.
 
